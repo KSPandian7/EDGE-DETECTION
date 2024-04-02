@@ -38,7 +38,7 @@ gray=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
 gray = cv2.GaussianBlur(gray,(3,3),0)
 ```
 ### SOBEL EDGE DETECTOR:
-### SOBEL X:
+#### SOBEL X:
 ```py
 sobelx = cv2.Sobel(gray,cv2.CV_64F,1,0,ksize=5)
 plt.imshow(sobelx,cmap='gray')
@@ -46,7 +46,7 @@ plt.title("Sobel X axis")
 plt.axis("off")
 plt.show()
 ```
-### SOBEL Y:
+#### SOBEL Y:
 ```py
 sobely = cv2.Sobel(gray,cv2.CV_64F,0,1,ksize=5)
 plt.imshow(sobely,cmap='gray')
@@ -54,7 +54,7 @@ plt.title("Sobel Y axis")
 plt.axis("off")
 plt.show()
 ```
-### SOBEL XY:
+#### SOBEL XY:
 ```py
 sobelxy = cv2.Sobel(gray,cv2.CV_64F,1,1,ksize=5)
 plt.imshow(sobelxy,cmap='gray')
